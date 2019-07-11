@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Wang's Vim configuration,
-"     for processing tex/pdf, and coding in Golang & Python
+"     for processing texts and codes
 "
 " Based on Amir Salihefendic's basic.vimrc
 "     https://github.com/amix/vimrc
@@ -123,7 +123,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:session_directory = $HOME . '/.vim/sessions'
 "" autosave/autoload? works or not?
 let g:session_autosave = 'yes' "works
-"let g:session_autoload = 'yes' "not work with vim-startify
+let g:session_autoload = 'no' "not work with vim-startify
 
 " easy motion
 nmap <leader>m <Plug>(easymotion-s)
@@ -359,9 +359,9 @@ else
 endif
 
 " Turn backup on. Need to build these folders manually.
-set backup
-set backupdir=$HOME/.vim/backup
-set directory=$HOME/.vim/tmp
+"set backup
+"set backupdir=$HOME/.vim/backup
+"set directory=$HOME/.vim/tmp
 
 " Set utf8 as standard encoding, and en_US as the standard language
 set encoding=utf8
@@ -422,8 +422,8 @@ autocmd FileType haskell,vhdl,ada      let b:comment_leader = '-- '
 " => Keybindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Treat long lines as break lines (useful when moving around in them)
-nnoremap j gk
-nnoremap k gj
+nnoremap k gk
+nnoremap j gj
 nnoremap <Down> gj
 nnoremap <Up> gk
 inoremap <Down> <C-o>gj
@@ -451,10 +451,10 @@ command! W w !sudo tee % > /dev/null
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
-nnoremap <M-k> mz:m+<CR>`z
-nnoremap <M-j> mz:m-2<CR>`z
-vnoremap <M-k> :m'>+<CR>`<my`>mzgv`yo`z
-vnoremap <M-j> :m'<-2<CR>`>my`<mzgv`yo`z
+nnoremap <M-j> mz:m+<CR>`z
+nnoremap <M-k> mz:m-2<CR>`z
+vnoremap <M-j> :m'>+<CR>`<my`>mzgv`yo`z
+vnoremap <M-k> :m'<-2<CR>`>my`<mzgv`yo`z
 
 " Delete trailing white spaces
 noremap <leader><BS> :%s/\s\+$//ge<CR>

@@ -27,6 +27,8 @@ This is Wang's Vim configuration for editing TeX, Go and Python scripts.
 
 5. Launch `vim`, and type `:PlugInstall` to install `vim` plugins.
 
-## nvim: `~/.config/nvim/init.vim`
+## nvim:
+- Linux: `~/.config/nvim/init.vim`
+- Win10: `~/.config/nvim/init.vim`
 
 ## Have fun!

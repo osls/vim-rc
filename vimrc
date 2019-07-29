@@ -328,7 +328,8 @@ hi ColorColumn NONE ctermbg=Cyan
 
 "set font
 "set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
-set guifont=DejaVu\ Sans\ Mono\ 12
+"set guifont=DejaVu\ Sans\ Mono\ 12
+set guifont=Hack:h13
 
 " add more components to statusline
 set statusline+=%#warningmsg#

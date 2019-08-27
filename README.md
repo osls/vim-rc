@@ -29,6 +29,8 @@ This is Wang's Vim configuration for editing TeX, Go and Python scripts.
 
 ## nvim:
 - Linux: `~/.config/nvim/init.vim`
-- Win10: `~/.config/nvim/init.vim`
+- Win10: `C:/Users/xxx/AppData/Local/nvim/`
+    + `init.vim`
+    + `autoload\plug.vim`
 
 ## Have fun!
